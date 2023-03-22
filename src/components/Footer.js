@@ -4,19 +4,19 @@ export default function Footer() {
   return (
     <footer id="footer">
       <ul className="icons">
-        {config.socialLinks.map(social => {
-          const { style, icon, name, url } = social;
-          return (
-            <li key={url}>
-              <a href={url} className={`icon ${style} ${icon}`}>
-                <span className="label">{name}</span>
-              </a>
-            </li>
-          );
-        })}
+        <li>
+          <a href="tel:+34646812286">
+            <span className="label">+34 646 81 22 86</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:info.torimbia.ocio.natural@gmail.com">
+            <span className="label">info.torimbia.ocio.natural@gmail.com</span>
+          </a>
+        </li>
       </ul>
       <ul className="copyright">
-        <li>&copy; Spectral</li>
+        <li>&copy; AppSeed</li>
         <li>
           Design: <a href="http://html5up.net">HTML5 UP</a>
         </li>

@@ -4,29 +4,25 @@ import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
-import config from '../../config';
+import pic1 from '../assets/images/coast.jpg';
+import pic2 from '../assets/images/lakes.jpg';
+import pic3 from '../assets/images/lakes/lakes-2.jpg';
+
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
       <div className="inner">
-        <h2>{config.heading}</h2>
-        <p>{config.subHeading}</p>
-        <ul className="actions special">
-          <li>
-            <Scroll type="id" element="one">
-              <a href="/#" className="button primary">
-                Explore
-              </a>
-            </Scroll>
-          </li>
-        </ul>
+        <h1>
+          Torimbia Ocio Natural
+        </h1>
+        <p>
+          Rutas en bicicleta por el oriente asturiano
+        </p>
       </div>
       <Scroll type="id" element="one">
         <a href="#one" className="more">
-          Learn More
+          Descubre mas
         </a>
       </Scroll>
     </section>
@@ -35,35 +31,20 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
-            <br />
-            eget augue amet aliquet nisl cep donec
+            Organiza tus vacaciones en bicicleta <br />
+            con Torimbia Ocio Natural
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            En Torimbia Ocio Natural tenemos la experiencia de años para daros a ti y a tu familia las
+            vacaciones perfectas.
+            Dejalo todo en nuestras manos y embarcate en una experiencia inolvidable junto a la naturaleza.
           </p>
         </header>
-        <ul className="icons major">
-          <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Dolor</span>
-            </span>
-          </li>
-        </ul>
+        <Scroll type="id" element="two">
+          <a href="#two" className="more">
+            Descubre nuestros viajes
+          </a>
+        </Scroll>
       </div>
     </section>
 
@@ -74,14 +55,16 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
+            Senda Costera
           </h2>
+          <hr />
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Ruta en familia para disfrutar de la costa y la gastronomia asturiana.<br />
+            Con visita a llagar para conocer el proceso de elaboracion de la sidra.
           </p>
+          <h3>
+            <a href="/trips/coast" className="button small">Mas</a>
+          </h3>
         </div>
       </section>
       <section className="spotlight">
@@ -90,14 +73,13 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
+            Lagos de Covadonga
           </h2>
+          <hr />
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+          Subida al mitico puerto de "La vuelta". <br />
           </p>
+          <a href="/trips/lakes" className="button small">Mas</a><br/>
         </div>
       </section>
       <section className="spotlight">
@@ -106,13 +88,11 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
+            Descubre nuestros viajes
           </h2>
+          <hr />
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            Descubre el resto de nuestros viajes y servicios en el oriente asturiano
           </p>
         </div>
       </section>
@@ -121,81 +101,40 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>Nuestros viajes incluyen</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            En todos los viajes de Torimbia Ocio Natural se inluyen los siguiente servicios
           </p>
         </header>
         <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
+          <li className="icon solid fa-bicycle">
+            <h3>Bicicletas modernas</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              <br/>
+              Contamos con una moderna flota de bicicletas hibridas y de carretera.
             </p>
           </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
+          <li className="icon solid fa-cog">
+            <h3>Soporte</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              <br />
+              Durante todo el recorrido contaras con la ayuda de nuestros guias y
+              nuestro vehiculo de apoyo
             </p>
           </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
+          <li className="icon solid fa-tools">
+            <h3>Kit de reparaciones</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Para el alquiler libre contareis con un kit de reparaciones completo,
+              casco y candado.
             </p>
           </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
+          <li className="icon solid fa-language">
+            <h3>English friendly</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              <br/>
+              Nuestros guias hablan ingles.
             </p>
-          </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
-            <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="cta" className="wrapper style4">
-      <div className="inner">
-        <header>
-          <h2>Arcue ut vel commodo</h2>
-          <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
-          </p>
-        </header>
-        <ul className="actions stacked">
-          <li>
-            <a href="/#" className="button fit primary">
-              Activate
-            </a>
-          </li>
-          <li>
-            <a href="/#" className="button fit">
-              Learn More
-            </a>
           </li>
         </ul>
       </div>

@@ -981,6 +981,10 @@
 
 /* Features */
 
+	article .features li::before {
+		color: "red"
+	}
+
 	.features {
 		@include vendor('display', 'flex');
 		@include vendor('flex-wrap', 'wrap');
@@ -1668,7 +1672,7 @@
 
 		&:after {
 			@include vendor('pointer-events', 'none');
-			@include vendor('transition', 'opacity #{_duration(fadein)} ease-in-out');
+			@include vendor('transition', 'opacity #{_duration(fadein)}');
 			@include vendor('transition-delay', '1.25s');
 			content: '';
 			background: _palette(bg);
@@ -1818,6 +1822,14 @@
 				}
 			}
 		}
+	}
+	
+	#main.img-coast > header {
+		@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/coast.jpg")'));
+	}
+
+	#main.img-lakes > header {
+		@include vendor('background-image', ('linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../images/lakes.jpg")'));
 	}
 
 	body.is-mobile {

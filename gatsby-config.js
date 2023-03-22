@@ -3,7 +3,10 @@ const config = require('./config');
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: config.siteTitle,
+    title: 'Torimbia Ocio Natural',
+    description: `Pagina web de Torimbia Ocio Natural`,
+    author: `@nicolaspascual`,
+    siteUrl: `https://www.torimbiaocionatural.com`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',

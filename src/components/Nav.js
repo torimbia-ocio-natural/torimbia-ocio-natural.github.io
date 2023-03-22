@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import Collapsible from './Collapsible'
+import config from '../../config';
 
-export default function Nav({ onMenuToggle = () => {} }) {
+
+export default function Nav({ onMenuToggle = () => { } }) {
+  const [tripsOpened, setTripsOpened] = useState(false)
+
   return (
     <nav id="nav">
       <ul>
@@ -19,13 +24,21 @@ export default function Nav({ onMenuToggle = () => {} }) {
           <div id="menu">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">Inicio</Link>
               </li>
               <li>
-                <Link to="/Generic">Generic Page</Link>
+                <Collapsible title="Rutas">
+                  <ul style={{marginLeft: "1em"}}>
+                    {config.trips.map(({ title, path }) =>
+                      <li key="path">
+                        <Link to={path}>{title}</Link>
+                      </li>
+                    )}
+                  </ul>
+                </Collapsible>
               </li>
               <li>
-                <Link to="/Elements">Elements</Link>
+                <Link to="/bikes">Bicicletas</Link>
               </li>
             </ul>
             <a
